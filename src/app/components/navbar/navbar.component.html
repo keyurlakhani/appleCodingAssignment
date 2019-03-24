@@ -12,7 +12,7 @@
     <ul class="menu">
       <li *ngFor="let link of links" class="menu-item">
         <div class="menu-item-div">
-          <div class = "menu-item-div-nested">
+          <div class="menu-item-div-nested">
             <div [ngStyle]="{ backgroundColor: link.tabColor }" class="tab-color"></div>
             <a href="#">{{ link.name }}</a>
           </div>

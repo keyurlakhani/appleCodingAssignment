@@ -25,7 +25,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.resizeSubscription = this.windowWidthService.onResize$.subscribe(
-      window => this.onResize(window.innerWidth) // console.log(size)
+      window => this.onResize(window.innerWidth)
     );
     this.links.forEach(element => {
       element.dropdown = false;
@@ -38,13 +38,11 @@ export class NavbarComponent implements OnInit, OnDestroy {
     }
   }
 
-  // @HostListener('window:resize', ['$event'])
   onResize(size) {
     console.log(size);
     this.screenWidth = size;
     if (this.screenWidth > 767) {
       this.header.nativeElement.classList.remove('menu-opened');
-      // console.log(e.target.innerWidth);
     }
   }
 
