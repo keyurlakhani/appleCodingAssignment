@@ -29,7 +29,15 @@ const LINKS = [
   },
   {
     name: 'Music',
-    tabColor: '#686868'
+    tabColor: '#686868',
+    nestedLinks: [
+      {
+        name: 'iPhone'
+      },
+      {
+        name: 'iPad'
+      }
+    ]
   },
   {
     name: 'Support',

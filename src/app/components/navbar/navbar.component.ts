@@ -6,8 +6,8 @@ import {
   HostListener,
   OnDestroy
 } from '@angular/core';
-import LINKS from './global';
-import { WindowWidthService } from './window-width.service';
+import LINKS from '../../common/global';
+import { WindowWidthService } from '../../services/window-width.service';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -40,7 +40,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
 
   // @HostListener('window:resize', ['$event'])
   onResize(size) {
-    // console.log(size);
+    console.log(size);
     this.screenWidth = size;
     if (this.screenWidth > 767) {
       this.header.nativeElement.classList.remove('menu-opened');
