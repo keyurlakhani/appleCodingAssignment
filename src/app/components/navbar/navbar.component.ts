@@ -39,7 +39,6 @@ export class NavbarComponent implements OnInit, OnDestroy {
   }
 
   onResize(size) {
-    console.log(size);
     this.screenWidth = size;
     if (this.screenWidth > 767) {
       this.header.nativeElement.classList.remove('menu-opened');
