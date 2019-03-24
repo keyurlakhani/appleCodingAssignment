@@ -10,7 +10,7 @@
       <img src="assets/images/apple.svg" alt="" />
     </div>
     <ul class="menu">
-      <li *ngFor="let link of links" class="menu-item">
+      <li *ngFor="let link of links; trackBy: trackByFn" class="menu-item">
         <div class="menu-item-div">
           <div class="menu-item-div-nested">
             <div [ngStyle]="{ backgroundColor: link.tabColor }" class="tab-color"></div>
@@ -26,7 +26,7 @@
           </div>
         </div>
         <ul class="dropdown" *ngIf="link.dropdown">
-          <li class="link-dropdown" *ngFor="let link of link.nestedLinks">
+          <li class="link-dropdown" *ngFor="let link of link.nestedLinks; trackBy: trackByFn">
             <a class="nested-link-dropdown" href="">
               {{ link.name }}
             </a>
