@@ -27,8 +27,9 @@ export class NavbarComponent implements OnInit, OnDestroy {
     this.resizeSubscription = this.windowWidthService.onResize$.subscribe(
       window => this.onResize(window.innerWidth)
     );
-    this.links.forEach(element => {
-      element.dropdown = false;
+    const dropDown = 'dropdown';
+    this.links.map(element => {
+      element[dropDown] = false;
     });
   }
 
