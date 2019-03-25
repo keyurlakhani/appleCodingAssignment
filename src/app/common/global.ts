@@ -1,56 +1,68 @@
 const LINKS = [
   {
-    name: 'Mac',
+    name: 'Talent',
     tabColor: '#50c5ed'
   },
   {
-    name: 'iPad',
-    tabColor: '#eb387b'
+    name: 'Connections',
+    tabColor: '#eb387b',
+    nestedLinks: [
+      {
+        name: 'Pipelines'
+      },
+      {
+        name: 'Requisition'
+      },
+      {
+        name: 'Projects'
+      }
+    ]
   },
   {
-    name: 'iPhone',
-    tabColor: '#f67509'
+    name: 'Intelligence',
+    tabColor: '#f67509',
+    nestedLinks: [
+      {
+        name: 'Company'
+      },
+      {
+        name: 'Schools'
+      }
+    ]
   },
   {
-    name: 'Watch',
+    name: 'Workspace',
     tabColor: '#8705e4',
     nestedLinks: [
       {
-        name: 'iPhone'
+        name: 'Office'
       },
       {
-        name: 'iPad'
+        name: 'Desk'
       }
     ]
   },
   {
-    name: 'TV',
+    name: 'Insight',
     tabColor: '#7cc04a'
   },
   {
-    name: 'Music',
-    tabColor: '#686868',
-    nestedLinks: [
-      {
-        name: 'iPhone'
-      },
-      {
-        name: 'iPad'
-      }
-    ]
-  },
-  {
-    name: 'Support',
-    tabColor: '#50c5ed',
-    nestedLinks: [
-      {
-        name: 'iPhone'
-      },
-      {
-        name: 'iPad'
-      }
-    ]
+    name: 'Johhny Appleseed',
+    tabColor: '#686868'
   }
+  // },
+  // {
+  //   name: 'Support',
+  //   tabColor: '#50c5ed',
+  //   nestedLinks: [
+  //     {
+  //       name: 'iPhone'
+  //     },
+  //     {
+  //       name: 'iPad'
+  //     }
+  //   ]
+  // }
 ];
 
 export default LINKS;
